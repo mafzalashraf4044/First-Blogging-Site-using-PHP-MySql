@@ -11,33 +11,73 @@
     <link rel="shortcut icon" type="image/x-icon" href="./images/siteIcon.png">
 
     <!-- custom css -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="./bootstrap/css/bootsrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
 
 </head>
 <body>
     
-    <div class="navbar">
+    <div class="sidePanel">
+
+        <h1>Learners Spot</h1>
 
         <nav>
-            <h1>Learners Spot</h1>
 
-            <ul>
+            <ul class="mainMenu">
 
                 <li><a href="">HOME</a></li>
-                <li><a href="">TOPICS</a></li>
+                <li class="dropDown">
+                    <a href="">TOPICS</a>
+                    <ul class="dropDown-menu">
+
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">Bootstrap</a></li>
+                        <li><a href="">JavaScript</a></li>
+                        <li><a href="">JQuery</a></li>
+                        <li><a href="">PHP</a></li>
+                        <li><a href="">MySql</a></li>
+
+
+                    </ul>
+                
+                
+                </li>
                 <li><a href="">ABOUT</a></li>
                 <li><a href="">CONTACT</a></li>
                 
 
             </ul>
         </nav>
+
+        <div class="panelFooter">
+            <p>Read about Web Developement, Web Designing, Programming and Other Cool Stuff!!!</p>
+
+
+            <a href="" id="leftPadding"><i class="fa fa-facebook-square"></i></a>
+            <a href=""><i class="fa fa-google-plus-square"></i></a>
+            <a href=""><i class="fa fa-github-square"></i></a>
+            <a href=""><i class="fa fa-twitter-square"></i></a>
+
+
+        </div>
+        
     </div>
+
+
+    <div class="mainPage">
+
+
+    </div>
+
 
     <script src="jquery-2.2.3.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
